@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+
+    <title>Sua Conta | RV CRM</title>
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="fonts/boxicons.css" />
+    <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
+
+    <script src="assets/vendor/js/helpers.js"></script>
+    <script src="assets/js/config.js"></script>
+
+    <script async defer src="https://buttons.github.io/buttons.js"></script>  
+
+    <style>
+      .logo-login {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      .logo-imagem {
+          max-width: 80%;
+          height: auto;
+          margin-left: 20%;
+          text-align: center;
+          max-height: 100px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="dashboard.html" class="app-brand-link">
+              <span>
+                <div class="logo-login"></div>
+              <img class="logo-imagem" src="Logo RV.jpg" alt="Logo RV">
+            </a>
+          </span>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Inicio</span>
+            </li>
+            <ul>
+            <li class="menu-item">
+              <a href="dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                <div data-i18n="Without menu">Dashboard</div>
+              </a>
+              </ul>
+            </li>
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Conta</span>
+            </li>
+                <ul>
+                <li class="menu-item">
+                  <a href="conta.html" class="menu-link">
+                       <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                    <div data-i18n="Without menu">Seus Dados</div>
+                  </a>
+                    </ul>
+                </li>
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Vendas</span>
+            </li>
+                <ul>
+                <li class="menu-item">
+                  <a href="cadastro-clientes.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                    <div data-i18n="Without menu">Cadastro de Clientes</div>
+                  </a>
+                </li>
+                    </ul>
+                <ul>
+                <li class="menu-item">
+                   <a href="cadastro-vendas.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                    <div data-i18n="Without menu">Cadastro de Negócios</div>
+                  </a>
+                </li>
+                    </ul>
+            
+        </aside>
+
+      <div class="layout-page">
+      <div class="content-wrapper">
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4">
+              <span class="text-muted fw-light">Seus Dados/</span>Conta
+              </h4>
+
+              <div class="row">
+                <div class="col-md-12">
+                  <ul class="nav nav-pills flex-column flex-md-row mb-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" ><i class="bx bx-user me-1"></i>Conta</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="relatorio-vendas.html"><i class="bx bx-dock-top"></i> Vendas</a>
+                    </li>
+                  </ul>
+
+                  <div class="card mb-4">
+                    <h5 class="card-header">Roberto</h5>
+
+                    <div class="card-body">
+                      <div class="d-flex align-items-start align-items-sm-center gap-4">
+                        <img
+                          src="assets/img/avatars/1.png"
+                          alt="user-avatar"
+                          class="d-block rounded"
+                          height="100"
+                          width="100"
+                          id="uploadedAvatar"/>
+                      </div>
+                    </div>
+
+                    <hr class="my-0" />
+                    <div class="card-body">
+                      <form id="formAccountSettings" method="POST" onsubmit="return false">
+                        <div class="row">
+                          <div class="mb-3 col-md-6">
+                            <label for="firstName" class="form-label">Nome</label>
+                              <input class="form-control"
+                              type="text"
+                              id="firstName"
+                              name="firstName"
+                              value="Roberto"
+                              autofocus/>
+                          </div>
+
+                          <div class="mb-3 col-md-6">
+                            <label for="lastName" class="form-label">Sobrenome</label>
+                            <input class="form-control" type="text" name="lastName" id="lastName" value="Junior" />
+                          </div>
+
+                          <div class="mb-3 col-md-6">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              id="email"
+                              name="email"
+                              value="roberto@inova.com.br"
+                              placeholder="e-mail@exemplo.com.br"/>
+                          </div>
+
+                          <div class="mb-3 col-md-6">
+                            <label for="organization" class="form-label">Empresa</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="organization"
+                              class="form-control"
+                              name="organization"
+                              value="Inova"/>
+                          </div>
+
+                          <div class="mb-3 col-md-6">
+                            <label class="form-label" for="phoneNumber">Telefone</label>
+                            <div class="input-group input-group-merge">
+                              <span class="input-group-text cursor-pointer"> BR (+55)</span>
+                              <input
+                                type="text"
+                                id="phoneNumber"
+                                name="phoneNumber"
+                                class="form-control"
+                                placeholder="11 2222-5555"/>
+                            </div>
+                          </div>
+
+                          <div class="mb-3 col-md-6">
+                            <label for="address" class="form-label">Endereço</label>
+                            <input type="text" class="form-control" id="address" name="address" placeholder="End e número" />
+                          </div>
+
+                          <div class="mb-3 col-md-6">
+                            <label for="state" class="form-label">Estado</label>
+                            <input class="form-control" type="text" id="state" name="state" placeholder="Estado" />
+                          </div>
+
+                          <div class="mb-3 col-md-6">
+                            <label for="zipCode" class="form-label">CEP</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="zipCode"
+                              name="zipCode"
+                              placeholder="231465"
+                              maxlength="6"/>
+                          </div>
+
+                            <div class="mb-3 col-md-6">
+                            <label class="form-label" for="country">País</label>
+                            <select id="country" class="select2 form-select">
+                              <option value="">Selecione</option>
+							                <option value="Brasil">Brasil</option>
+                            </select>
+                            </div>
+                         
+                        <div class="mt-2">
+                          <button type="submit" class="btn btn-primary me-2">Salvar</button>
+                          <button type="reset" class="btn btn-outline-secondary">Cancelar</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <h5 class="card-header">Deletar Conta</h5>
+                    <div class="card-body">
+                      <div class="mb-3 col-12 mb-0">
+                        <div class="alert alert-warning">
+                          <h6 class="alert-heading fw-bold mb-1">Tem certeza que quer deletar sua conta?</h6>
+                          <p class="mb-0">Depois de excluir sua conta, não há como voltar atrás. Por favor, tenha certeza.</p>
+                        </div>
+                      </div>
+
+                      <form id="formAccountDeactivation" onsubmit="return false">
+                        <div class="form-check mb-3">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            name="accountActivation"
+                            id="accountActivation"/>
+                          <label class="form-check-label" for="accountActivation">Confirmo que quero deletar minha conta</label>
+                        </div>
+                        <button type="submit" class="btn btn-danger deactivate-account">Deletar Conta</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  RV-CRM
+                </div>
+              </div>
+            </footer>
+            <div class="content-backdrop fade"></div>
+          </div>
+        </div>
+      </div>
+      <div class="layout-overlay layout-menu-toggle"></div>
+    </div>
+  </body>
+</html>

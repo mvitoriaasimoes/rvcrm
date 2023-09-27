@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  class="light-style layout-menu-fixed"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template-free"
+>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
+
+    <title>Dashboard | RV CRM</title>
+
+    <meta name="description" content="" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="fonts/boxicons.css" />
+    <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="css/demo.css" />
+
+
+	<script src="assets/vendor/js/helpers.js"></script>
+	<script src="assets/js/config.js"></script>
+	  
+	<script async defer src="https://buttons.github.io/buttons.js"></script>  
+
+    <style>
+      .logo-login {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      .logo-imagem {
+          max-width: 80%;
+          height: auto;
+          margin-left: 20%;
+          text-align: center;
+          max-height: 100px;
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="dashboard.html" class="app-brand-link">
+              <span>
+                <div class="logo-login"></div>
+              <img class="logo-imagem" src="Logo RV.jpg" alt="Logo RV">
+            </a>
+          </span>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+              <i class="bx bx-chevron-left bx-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Inicio</span>
+            </li>
+            <ul>
+            <li class="menu-item">
+              <a href="dashboard.html" class="menu-link">
+                <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                <div data-i18n="Without menu">Dashboard</div>
+              </a>
+              </ul>
+            </li>
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Conta</span>
+            </li>
+                <ul>
+                <li class="menu-item">
+                  <a href="conta.html" class="menu-link">
+                       <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                    <div data-i18n="Without menu">Seus Dados</div>
+                  </a>
+                    </ul>
+                </li>
+            <li class="menu-header small text-uppercase">
+              <span class="menu-header-text">Vendas</span>
+            </li>
+                <ul>
+                <li class="menu-item">
+                  <a href="cadastro-clientes.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                    <div data-i18n="Without menu">Cadastro de Clientes</div>
+                  </a>
+                </li>
+                    </ul>
+                <ul>
+                <li class="menu-item">
+                   <a href="cadastro-vendas.html" class="menu-link">
+                      <i class="menu-icon tf-icons bx bx-cube-alt"></i>
+                    <div data-i18n="Without menu">Cadastro de Negócios</div>
+                  </a>
+                </li>
+                    </ul>
+            
+        </aside>
+
+
+
+        <div class="layout-page">
+
+          <div class="content-wrapper">
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light"></span> Cadastro de Negócios</h4>
+
+              <div class="row">
+                <div class="col-xl">
+                  <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                      <h5 class="mb-0">Registre seus negócios através do formulário RV CRM!</h5>
+                      <small class="text-muted float-end">Dados Básicos</small>
+                      </div>
+                    <div class="card-body">
+                      <form>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-fullname">Cliente </label>
+                          <input type="text" class="form-control" id="basic-default-fullname" placeholder="João da Silva" />
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-company">Empresa</label>
+                          <input type="text" class="form-control" id="basic-default-company" placeholder="Inova Consultoria Ltda" />
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-email">Email</label>
+                          <div class="input-group input-group-merge">
+                            <input
+                              type="text"
+                              id="basic-default-email"
+                              class="form-control"
+                              placeholder="joao.silva"
+                              aria-label="joao.silva"
+                              aria-describedby="basic-default-email2"
+                            />
+</div>
+                          <div class="form-text">Você pode utilizar letras, números ou caracteres especiais</div>
+                        </div>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-phone">Telefone</label>
+                          <input
+                            type="text"
+                            id="basic-default-phone"
+                            class="form-control phone-mask"
+                            placeholder="(11) 2134-5678"
+                          />
+                        </div>
+                        <div class="mb-3">
+						  <label for="exampleFormControlSelect1" class="form-label">Produto</label>
+                          <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                            <option selected>Selecione um dos Produtos abaixo</option>
+                            <option value="1">Produto 1</option>
+                            <option value="2">Produto 2</option>
+                            <option value="3">Produto 3</option>
+                          </select>
+                        </div>
+						 <div class="mb-3">
+						<label for="exampleFormControlSelect1" class="form-label">Valor</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Valor em R$"
+                          aria-label="Amount (to the nearest dollar)"
+                        />
+                      </div>
+                        <div class="mb-3">
+                          <label for="exampleFormControlSelect1" class="form-label">Segmento de Atuação</label>
+                          <select class="form-select" id="exampleFormControlSelect1" aria-label="Default select example">
+                            <option selected>Selecione um dos segmentos abaixo</option>
+                            <option value="1">Revenda</option>
+                            <option value="2">Construtora</option>
+                            <option value="3">Industria</option>
+                          </select>
+                        <div class="mb-3">
+                          <label class="form-label" for="basic-default-message">Observações</label>
+                          <textarea
+                            id="basic-default-message"
+                            class="form-control"
+                            placeholder="Observações"
+                          ></textarea>
+                        </div>
+                        <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Cadastrar Negócio</button>
+                      </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
+                <div class="mb-2 mb-md-0">
+                  ©
+                  <script>
+                    document.write(new Date().getFullYear());
+                  </script>
+                  RV-CRM
+                </div>
+              </div>
+            </footer>
+
+  </body>
+</html>

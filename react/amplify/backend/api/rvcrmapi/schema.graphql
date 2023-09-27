@@ -1,0 +1,23 @@
+type Query {
+  # Adicione consultas relevantes, se necessário
+}
+
+type Mutation {
+  createFormEntry(input: FormEntryInput!): FormEntry
+}
+
+type FormEntry {
+  id: ID!
+  name: String!
+  email: String!
+  message: String!
+  createdAt: AWSDateTime!
+  # Adicione outros campos, como updatedAt, se necessário
+}
+
+input FormEntryInput {
+  name: String!
+  email: String!
+  message: String!
+  # Adicione outros campos de entrada, se necessário
+}

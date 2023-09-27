@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>RV CRM | Sua Plataforma de Sucesso!</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="fonts/boxicons.css" /> 
+    <link rel="stylesheet" href="css/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="css/theme-default.css" class="template-customizer-theme-css" /> 
+    <link rel="stylesheet" href="css/pages/page-auth.css" /> 
+
+    <style>
+      .logo-login {
+          text-align: center;
+          margin-bottom: 20px;
+      }
+      .logo-imagem {
+          max-width: 100%;
+          height: auto;
+          max-height: 100px;
+      }
+      h2{text-align: center;}
+    </style>
+</head>
+
+<body>
+      <div class="authentication-wrapper authentication-basic container-p-y">
+          <div class="card">
+            <div class="card-body">
+              <a href="index.html">
+                <div class="logo-login">
+                  <img class="logo-imagem" src="Logo RV.jpg" alt="Logo RV">
+                </a>
+      </div>
+
+      <h2 class="mb-2">Seja bem-vindo(a) de volta.</h2>
+      <p class="mb-4">Acesse sua conta para potencializar suas vendas:</p>
+
+            <form id="formAuthentication" class="mb-3" action="pagina-inicial-usuario.html" method="POST">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email ou Usuário</label>
+                  <input 
+                    type="text"
+                    class="form-control" 
+                    id="email"
+                    name="email-username"
+                    placeholder="Enter your email or username"
+                    autofocus/>
+                </div> 
+
+                <div class="mb-3 form-password-toggle">
+                  <div class="d-flex justify-content-between"> 
+                    <label class="form-label" for="password">Senha</label> 
+                    <a href="recuperar-senha.html">
+                      <small>Esqueceu sua senha?</small></a>
+                  </div>
+
+                  <div class="input-group input-group-merge"> 
+                    <input
+                      type="password"
+                      id="password"
+                      class="form-control"
+                      name="password"
+                      placeholder="&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;&#xb7;"
+                      aria-describedby="password"/>
+                    <span class="input-group-text cursor-pointer"><i class="bx bx-hide"></i></span>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <div class="form-check"> 
+                    <input class="form-check-input" type="checkbox" id="remember-me" /> 
+                    <label class="form-check-label" for="remember-me"> Lembrar-me </label>
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <button class="btn btn-primary d-grid w-100" type="submit"><a style="color:white" href="dashboard.html">Acessar</button></a> 
+                </div>
+              </form>
+            <div class="mb-3">
+       <p>Não tem uma conta? <a href="cadastro-processamento.html">Crie uma agora mesmo!</a></p>
+    </div>
+</body>
+</html>
